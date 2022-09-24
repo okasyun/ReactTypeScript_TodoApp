@@ -5,6 +5,8 @@ import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
 // https://vitejs.dev/config/
 export default defineConfig({
+  // リソースの読み込み先をルートディレクトリ→ルートディレクトリ直下
+  base: "./",
   build: {
     outDir: "./docs",
   },
